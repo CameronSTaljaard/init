@@ -1,0 +1,4 @@
+# Ordinarily, last reboot | head -1 would work perfectly.
+# On this VM, it's easier to clean the results of uptime to show the boot date and time.
+uptime | perl -ne '/.*up +(?:(\d+) days?,? +)?(\d+):(\d+),.*/; $total=((($1*24+$2)*60+$3)*60);
+$now=time(); $now-=$total; $now=localtime($now); print $now,"\n";'

@@ -1,0 +1,21 @@
+Example output of traceroute.
+This was done using Windows, as the ubuntu VM would not establish a connection.
+
+  1    <1 ms    <1 ms    <1 ms  192.168.101.1
+  2     5 ms     3 ms     4 ms  dsl-197-245-238-1.voxdsl.co.za [197.245.238.1]
+  3     2 ms     2 ms     2 ms  196.22.226.164
+  4    24 ms     7 ms     3 ms  41.193.55.241
+  5     1 ms     1 ms     1 ms  41.175.242.212
+  6   151 ms   150 ms   151 ms  te-0-0-0-15.luk-p1-tho.liquidtelecom.net [5.11.10.220]
+  7   150 ms   150 ms   155 ms  be-3.luk-pe1-tho.liquidtelecom.net [5.11.10.103]
+  8   146 ms   146 ms   146 ms  5.11.10.95.liquidtelecom.net [5.11.10.95]
+  9   151 ms   151 ms   151 ms  195.66.237.175
+ 10   148 ms   147 ms   147 ms  52.95.61.184
+ 11   147 ms   147 ms   157 ms  52.95.61.63
+ 12     *        *        *     Request timed out.
+ 13   147 ms   147 ms   147 ms  54.239.42.112
+ 14   154 ms   152 ms   153 ms  54.239.100.66
+ 15   150 ms   151 ms   151 ms  52.94.35.133
+ 
+ The first result is my local IP, the second is where it routed to.
+ 197.245.238.1

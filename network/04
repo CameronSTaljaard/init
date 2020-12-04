@@ -1,0 +1,7 @@
+# Route returns all the routes from the routing table.
+# The default is always on the first row of results (row 3)
+# we pass routes results into head, which shows us only the first three columns.
+# The second column contains the address we want, and the first 2 columns are useless.
+# We then use 0.0.0.0 through grep to remove the first 2 columns that contain no useful data.
+# We then print only the second column. This will always be the default gateway.
+route -n | head -3 | grep 0.0.0.0 | awk '{print $2}'
