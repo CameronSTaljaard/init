@@ -1,1 +1,1 @@
-ip r | grep default | head -1
+nslookup slash16.org

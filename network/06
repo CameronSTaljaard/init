@@ -1,3 +1,1 @@
-# Not much to say here.
-# This is where the file is.
-cat /var/run/resolv.conf
+# /etc/resolv.conf

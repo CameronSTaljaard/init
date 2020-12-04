@@ -1,1 +1,3 @@
-/etc/hosts
+# Just had to edit /etc/hosts and add a new entry to do this.
+
+# A new entry/line needs to be added to this file with 46.19.122.85 as the first field, followed by intra.42.fr to reroute traffic to intra.

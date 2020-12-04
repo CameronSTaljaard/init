@@ -1,2 +1,1 @@
-# This command does not work properly through a virtual ubuntu, but can be proven to work on a real unix system, or windows with tracert.
-traceroute slash16.org
+traceroute "slash16.org"

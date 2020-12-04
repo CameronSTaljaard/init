@@ -1,0 +1,6 @@
+if [ $1 -ft 0 ]
+then
+	sudo deluser $1
+else
+	echo "No user specified."
+fi
