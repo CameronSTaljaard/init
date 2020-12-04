@@ -1,0 +1,3 @@
+# hostname with the -I overload returns all external IP addresses of the network interface
+# cut is being used to make sure it only displays the first result, being this devices main ethernet.
+hostname -I | cut -f1 -d' '
