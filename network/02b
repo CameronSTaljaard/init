@@ -1,0 +1,6 @@
+# ip link is displaying all information about eth0.
+# this data is then being cleaned by grep, tr, and sed afterwards.
+# grep is making it so we only see the lines containing link/ether (the MAC address in this case)
+# tr removes specified characters, in this case we're telling it to remove link/ether from the result so we're left with only the address.
+# this left us with an annoying tab from how ip link works, so we used sed to remove all of the /t characters.
+ip link show eth0 | grep "link/ether " | tr -d link/ether | sed -e 's/[ \t]*//'
