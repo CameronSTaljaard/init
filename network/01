@@ -1,0 +1,6 @@
+# ip link gets the ip of all interfaces on the network.
+# -j returns the results in JSON format.
+# jq is a JSON processor.
+# [] means array and .[] means "Return all".
+# We specify to return all ifname's in this instance.
+ip -j link | jq -r '.[].ifname'
